@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <title>The J1 Visit</title>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <ul class="top-nav">
+      <li class="top-nav-item">About IA&amp;A</li>
+      <li class="top-nav-item">Sign In</li>
+    </ul>
+    <a class="home" href="../index.html">
+      <h1>The J1 Visit</h1>
+      <h2>A guide to your US visit sponsored by International Arts &amp; Artists</h2>
+    </a>
+  </header>
+  <nav class="primary-nav-menu">
+    <a class="primary-nav-item" href="../1-checklist/0-index.html">Visit Checklist</a>
+    <a class="primary-nav-item" href="../2-additional-forms/0-index.html">Additional Forms</a>
+    <a class="primary-nav-item" href="../3-contact/0-index.html">Contact IA&amp;A</a>
+  </nav>
+    <main>
+      <section class="checklist-nav">
+        <a href="1-SEVIS.html">Activate</a>
+        <a href="2-SSN.html">SSN</a>
+        <a href="3-Mid-Eval.html">Mid Eval</a>
+        <a href="4-Final-Eval.html">Final Eval</a>
+        <a href="5-Grace-Period.html">30 Days After</a>
+        <a href="6-Taxes.html">Taxes</a>
+      </section>
+      <section class="visit-checklist-form" id="activate">
+        <h3>Mid-Program Evaluation</h2>
+        <p>Mid-program evaluations must be completed and returned to your sponsor on time per U.S. Department of State regulations.
+        Failure to submit your evaluation in a timely manner may jeopadize your J1 visa status.</p>
+        <form action="https://formspree.io/test@example.com" method="POST">
+          <label for="fullname">Your Name</label>
+          <input type="text" name="name" id="fullname" placeholder="Please type your first and last name">
+
+          <label for="emailaddy">Your email</label>
+          <input type="email" name="_replyto" id="emailaddy">
+
+          <label for="program-start-date">Date you started your internship/training program.</label>
+          <input type="date" name="start-date" id="program-start-date"></input>
+
+          <label for="host-org-name">Host Organization Name<label>
+          <input type="text" name="nost-name" id="host-org-name">
+
+          <label for="comment-box">Any inital concerns or questions?</label>
+          <textarea name="comments" id="comment-box"></textarea>
+
+          <input type="submit" value="Send Activation Email">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Footer stuff goes here</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
