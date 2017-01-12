@@ -23,7 +23,7 @@
   </header>
   <nav class="primary-nav-menu">
     <a class="primary-nav-item" href="../1-checklist/0-index.html">Visit Checklist</a>
-    <a class="primary-nav-item" href="../2-additional-forms/0-index.html">Additional Forms</a>
+    <a class="primary-nav-item highlight" href="../2-additional-forms/0-index.html">Additional Forms</a>
     <a class="primary-nav-item" href="../3-contact/0-index.html">Contact IA&amp;A</a>
   </nav>
     <main>
@@ -32,22 +32,51 @@
         <p>J1 intern programs may be up to 12 months long and J1 trainee programs may be up to 18 months long.  If your current program duration is currently less than the maximum, then you may be eligible for an extension.</p>
         <p>Please submit your J1 extension request at least 2 weeks before your current program is scheduled to end so that your sponsor can evaluate and complete the necessary paperwork in time.  If you are requesting an extension with a new host, please allow a 4 week processing time.  See <a href="3-change-host-request">change of host request</a> instructions for more details.</p>
         <form action="https://formspree.io/test@example.com" method="POST">
-          <label for="fullname">Your Name</label>
-          <input type="text" name="name" id="fullname" placeholder="Please type your first and last name">
+          <div class="form-item">
+            <label for="fullname">Your Name</label>
+            <div class="form-input">
+              <input type="text" name="name" id="fullname">
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="emailaddy">Your email</label>
+            <div class="form-input">
+              <input type="email" name="_replyto" id="emailaddy">
 
-          <label for="emailaddy">Your email</label>
-          <input type="email" name="_replyto" id="emailaddy">
-
-          <label for="program-start-date">Date you started your internship/training program.</label>
-          <input type="date" name="start-date" id="program-start-date"></input>
-
-          <label for="host-org-name">Host Organization Name<label>
-          <input type="text" name="nost-name" id="host-org-name">
-
-          <label for="comment-box">Any inital concerns or questions?</label>
-          <textarea name="comments" id="comment-box"></textarea>
-
-          <input type="submit" value="Send Activation Email">
+          </div>
+          <div class="form-item">
+            <label for="host-org-name">Host Organization Name<label>
+            <div class="form-input">
+              <input type="text" name="nost-name" id="host-org-name">
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="program-start-date">Date you started your internship/training program.</label>
+            <div class="form-input">
+              <input type="date" name="start-date" id="program-start-date"></input>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="program-start-date">Your US Phone Number</label>
+            <div class="form-input">
+              <input type="phone-number" name="start-date" id="program-start-date"></input>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="program-start-date">Your US Living Address</label>
+            <div class="form-input">
+              <input type="address" name="start-date" id="program-start-date"></input>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="comment-box">Additional info</label>
+            <div class="form-input">
+              <textarea name="comments" id="comment-box" placeholder"Comments questions or concerns?"></textarea>
+            </div>
+          </div>
+          <div class="form-item">
+            <input type="submit" value="Send Activation Email">
+        </div>
         </form>
       </section>
     </main>

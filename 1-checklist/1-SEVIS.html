@@ -22,40 +22,90 @@
     </a>
   </header>
   <nav class="primary-nav-menu">
-    <a class="primary-nav-item" href="../1-checklist/0-index.html">Visit Checklist</a>
+    <a class="primary-nav-item highlight" href="../1-checklist/0-index.html">Visit Checklist</a>
     <a class="primary-nav-item" href="../2-additional-forms/0-index.html">Additional Forms</a>
     <a class="primary-nav-item" href="../3-contact/0-index.html">Contact IA&amp;A</a>
   </nav>
     <main>
+      <!-- CHECKLIST STEPS-->
       <section class="checklist-nav">
-        <a href="1-SEVIS.html">Activate</a>
-        <a href="2-SSN.html">SSN</a>
-        <a href="3-Mid-Eval.html">Mid Eval</a>
-        <a href="4-Final-Eval.html">Final Eval</a>
-        <a href="5-Grace-Period.html">30 Days After</a>
-        <a href="6-Taxes.html">Taxes</a>
+        <a href="1-SEVIS.html" class="checklist-nav-item">
+          <div class="step-number">1</div>
+          <p>Activate</p>
+        </a>
+        <a href="2-SSN.html" class="checklist-nav-item">
+          <div class="step-number">2</div>
+          <p>SSN</p>
+        </a>
+        <a href="3-Mid-Eval.html" class="checklist-nav-item">
+          <div class="step-number">3</div>
+          <p>Mid Eval</p>
+        </a>
+        <a href="4-Final-Eval.html" class="checklist-nav-item">
+          <div class="step-number">4</div>
+          <p>Final Eval</p>
+        </a>
+        <a href="5-Grace-Period.html" class="checklist-nav-item">
+          <div class="step-number">5</div>
+          <p>30 Days After</p>
+        </a>
+        <a href="6-Taxes.html" class="checklist-nav-item">
+          <div class="step-number">6</div>
+          <p>Taxes</p>
+        </a>
       </section>
+
+      <!-- INFO and FORM -->
       <section class="visit-checklist-form" id="activate">
         <h3>Activate your J1 Status</h2>
         <p>Please submit the form below to activate your J1 visa status.  You should do this on the first or second day of your program.</p>
         <p>If you submit this form later than 30 days from the  <a href "#">program start date</a> listed on your DS-2019, then your J1 visa status will become invalid.  Please contact IA&amp;A if you foresee a delay.</p>
         <form action="https://formspree.io/test@example.com" method="POST">
-          <label for="fullname">Your Name</label>
-          <input type="text" name="name" id="fullname" placeholder="Please type your first and last name">
+          <div class="form-item">
+            <label for="fullname">Your Name</label>
+            <div class="form-input">
+              <input type="text" name="name" id="fullname">
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="emailaddy">Your email</label>
+            <div class="form-input">
+              <input type="email" name="_replyto" id="emailaddy">
 
-          <label for="emailaddy">Your email</label>
-          <input type="email" name="_replyto" id="emailaddy">
-
-          <label for="program-start-date">Date you started your internship/training program.</label>
-          <input type="date" name="start-date" id="program-start-date"></input>
-
-          <label for="host-org-name">Host Organization Name<label>
-          <input type="text" name="nost-name" id="host-org-name">
-
-          <label for="comment-box">Any inital concerns or questions?</label>
-          <textarea name="comments" id="comment-box"></textarea>
-
-          <input type="submit" value="Send Activation Email">
+          </div>
+          <div class="form-item">
+            <label for="host-org-name">Host Organization Name<label>
+            <div class="form-input">
+              <input type="text" name="nost-name" id="host-org-name">
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="program-start-date">Date you started your internship/training program.</label>
+            <div class="form-input">
+              <input type="date" name="start-date" id="program-start-date"></input>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="program-start-date">Your US Phone Number</label>
+            <div class="form-input">
+              <input type="phone-number" name="start-date" id="program-start-date"></input>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="program-start-date">Your US Living Address</label>
+            <div class="form-input">
+              <input type="address" name="start-date" id="program-start-date"></input>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="comment-box">Additional info</label>
+            <div class="form-input">
+              <textarea name="comments" id="comment-box" placeholder"Comments questions or concerns?"></textarea>
+            </div>
+          </div>
+          <div class="form-item">
+            <input type="submit" value="Send Activation Email">
+        </div>
         </form>
       </section>
     </main>
