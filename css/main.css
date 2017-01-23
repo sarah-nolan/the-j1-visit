@@ -3,52 +3,25 @@ header {
   background-color: #fff;
   height: 20px;
   padding: 5px 2%;
+  z-index: 4;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   header {
-    header: 80px;
-    padding: 10px 2% 15px 2%;
-    margin: 5px 0 20px 0;
+    height: 20px;
+    padding: 20px 2% 20px 2%;
   }
 }
 
 @media screen and (min-width: 768px) {
   header {
-    height: 80px;
-    padding: 10px 2% 8px 2%;
+    height: 20px;
+    padding: 20px 2% 20px 2%;
     text-align: center;
   }
 }
 
 
-/*TOP NAV*/
-
-.top-nav {
-  text-align: right;
-}
-
-.top-nav-item {
-  color: #3c3a3a;
-  display: none;
-  font-family: 'Hind', sans-serif;
-  font-size: 10px;
-  margin: 0 0 0 25px;
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .top-nav-item {
-    font-size: 10px;
-    display: inline;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .top-nav-item {
-    font-size: 12px;
-    display: inline;
-  }
-}
 
 /*HOME*/
 .home {
@@ -58,10 +31,11 @@ header {
 
 h1 {
   color: #3c3a3a;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
+  font-weight: 800;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -78,7 +52,7 @@ h1 {
 
 h2 {
   color: #3c3a3a;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 10px;
   font-style: italic;
   text-decoration: none;
@@ -112,23 +86,26 @@ h2 {
   cursor: pointer;
   color: #fff;
   float: left;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
-  padding: 15px 0 15px 0;
+  padding: 15px 0;
   text-align: center;
   text-decoration: none;
   width: 33.33%;
+  height: 14px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .primay-nav-item {
     font-size: 14px;
+    padding: 16px 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .primary-nav-item {
     font-size: 16px;
+    padding: 16px 0;
   }
 }
 
@@ -136,17 +113,79 @@ h2 {
   background-color: #484444;
 }
 
-/* main */
+/* MAIN */
 main {
-  background-color: #fff;
+  background-color: rgba(193, 240, 210, 1);
   height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.splash {
+  background-image: url("../images/worker-dude-cropped.jpg");
+  background-size: cover;
+}
+
+.hero {
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  height: 120px;
+  width: 200px;
+  padding: 0 20px;
+  margin-top: 300px;
+  weight: 600;
+  background-color: rgba(129, 223, 187, 0.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.hero-title {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .hero-title {
+    font-size: 18px;
+  }
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  .hero {
+    width: 300px;
+    margin-top: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 20px;
+  }
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  .hero {
+    margin-top: 350px;
+    width: 400px;
+  }
+}
+
 
 /* footer */
 footer {
   background-color: #635f5f;
   color: white;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 12px;
   height: 50px;
   padding-top: 10px;
@@ -157,7 +196,7 @@ footer {
 
 /* VISIT CHECKSLIT */
 .checklist-nav {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
   padding: 5px 2%;
   height: 50px;
@@ -174,7 +213,6 @@ footer {
 
 
 .icon-menu {
-  margin: auto;
   padding-top: 20px;
   width: 300px;
 }
@@ -227,7 +265,7 @@ footer {
 
 h3 {
   color: #3c3a3a;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 18px;
   font-style: italic;
   padding: 5px 0;
@@ -235,26 +273,26 @@ h3 {
 }
 
 p {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
 }
 
 form {
   display: inline-block;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
   margin: 10px 0;
 }
 
 h4 {
   color: #3c3a3a;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
   font-weight: 800;
 }
 
 /* CONTACT */
 h5 {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 10px;
 }
