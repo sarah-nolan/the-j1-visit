@@ -113,108 +113,85 @@ h2 {
   background-color: #484444;
 }
 
-/* MAIN */
+/*MAIN*/
 main {
-  background-color: rgba(193, 240, 210, 1);
   height: 600px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  background-color: rgba(175, 233, 211, 0.65);
 }
+
+/*LANDING PAGE*/
 
 .splash {
   background-image: url("../images/worker-dude-cropped.jpg");
   background-size: cover;
+  height: 87vh;
 }
-
 .hero {
   color: white;
   font-family: 'Muli', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  height: 120px;
-  width: 200px;
-  padding: 0 20px;
-  margin-top: 300px;
   weight: 600;
-  background-color: rgba(129, 223, 187, 0.22);
+  text-align: center;
+  background-size: cover;
+  background-color: rgba(27, 49, 41, 0.64);
+  height: 70vh;
+  padding: 50px 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid white;
-  border-radius: 2px;
 }
 
 .hero-title {
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 20px;
 }
 
 .hero-subtitle {
-  font-size: 14px;
+  font-size: 16px;
+  font-style: italic;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .hero-title {
-    font-size: 18px;
+    font-size: 24px;
   }
   .hero-subtitle {
     font-size: 16px;
   }
   .hero {
-    width: 300px;
-    margin-top: 350px;
+    padding: 100px 20px 0 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-title {
-    font-size: 20px;
+    font-size: 28px;
   }
   .hero-subtitle {
-    font-size: 16px;
+    font-size: 18px;
   }
   .hero {
-    margin-top: 350px;
-    width: 400px;
+    padding: 100px 20px 0 20px;
   }
 }
 
+/*ICON PAGE*/
 
-/* footer */
-footer {
-  background-color: #635f5f;
-  color: white;
-  font-family: 'Muli', sans-serif;
-  font-size: 12px;
-  height: 50px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  padding-left: 1%;
-  padding-right: 1%;
+.icon-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-/* VISIT CHECKSLIT */
-.checklist-nav {
-  font-family: 'Muli', sans-serif;
-  font-size: 14px;
-  padding: 5px 2%;
-  height: 50px;
-  margin: 20px 0;
-}
-
-.checklist-nav-item {
-  text-decoration: none;
-  color: #635f5f;
-  width: 15.66%;
-  float: left;
-  text-align: center;
-}
-
 
 .icon-menu {
   padding-top: 20px;
-  width: 300px;
+  width: 250px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-decoration: none;
 }
 
 .icon {
@@ -224,19 +201,87 @@ footer {
 
 .icon-box {
   height: 60px;
-  float: left;
-  clear: both;
+  /*float: left;
+  clear: both;*/
 }
 
 .label-box {
   height: 30px;
   float: left;
-  text-decoration: none;
+  color: #3c3a3a;
   padding: 15px 0 15px 15px;
-  width: 185px;
+  width: 170px;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
 }
 
-/* FORM STYLING */
+/* FORM PAGES */
+.checklist-page {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.form-page {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+}
+
+.checklist-nav {
+  height: 50px;
+  margin: 20px 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.checklist-nav-item {
+  text-decoration: none;
+  font-family: 'Muli', sans-serif;
+  font-size: 11px;
+  color: #3c3a3a;
+  width: 15.66%;
+  height: 30px;
+  display: flex;
+  padding: 15px 0;
+  margin: 0 2px;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 400;
+  background-color: rgba(223, 246, 237, 0.65);
+  border-radius: 5px 20px 5px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .checklist-nav {
+    height: 100px;
+    margin: 20px 2%;
+  }
+
+  .checklist-nav-item {
+    border: 2px solid #635f5f;
+    border-radius: 5px 20px 5px;
+    padding: 20px 0;
+    margin: 0 8px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checklist-nav {
+    height: 100px;
+    margin: 20px 2%;
+  }
+
+  .checklist-nav-item {
+    border: 2px solid #635f5f;
+    border-radius: 5px 20px 5px;
+    padding: 20px 0;
+    margin: 0 8px;
+    font-size: 14px;
+  }
+}
 
 .visit-checklist-form {
   padding: 5px 2%;
@@ -251,7 +296,7 @@ footer {
 @media screen and (min-width: 768px) {
   .visit-checklist-form {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
   }
 }
 
@@ -268,11 +313,12 @@ h3 {
   font-family: 'Muli', sans-serif;
   font-size: 18px;
   font-style: italic;
+  font-weight: 600;
   padding: 5px 0;
   text-align: center;
 }
 
-p {
+.visit-checklist-form p {
   font-family: 'Muli', sans-serif;
   font-size: 14px;
 }
@@ -296,3 +342,33 @@ h5 {
   font-family: 'Muli', sans-serif;
   font-size: 10px;
 }
+
+
+
+/* FOOTER */
+/*footer {
+  background-color: #635f5f;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 12px;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 1%;
+  padding-right: 1%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  footer {
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    height: 40px;
+  }
+}*/
