@@ -88,7 +88,7 @@ h2 {
   float: left;
   font-family: 'Muli', sans-serif;
   font-size: 14px;
-  padding: 15px 0;
+  padding: 10px 0;
   text-align: center;
   text-decoration: none;
   width: 33.33%;
@@ -111,6 +111,13 @@ h2 {
 
 .highlight {
   background-color: #484444;
+  height: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  .highlight {
+    height: 14px;
+  }
 }
 
 /*MAIN*/
@@ -124,8 +131,9 @@ main {
 .splash {
   background-image: url("../images/worker-dude-cropped.jpg");
   background-size: cover;
-  height: 87vh;
+  height: 87.5vh;
 }
+
 .hero {
   color: white;
   font-family: 'Muli', sans-serif;
@@ -133,11 +141,29 @@ main {
   text-align: center;
   background-size: cover;
   background-color: rgba(27, 49, 41, 0.64);
-  height: 70vh;
+  height: 71vh;
   padding: 50px 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .splash {
+    height: 83vh;
+  }
+  .hero {
+    height: 67vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .splash {
+    height: 83vh;
+  }
+  .hero {
+    height: 67vh;
+  }
 }
 
 .hero-title {
@@ -180,6 +206,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: 87vh;
 }
 
 .icon-menu {
