@@ -140,6 +140,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -197,9 +198,6 @@ main {
 /*ICON PAGE*/
 
 .icon-page {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   height: 87vh;
 }
 
@@ -211,7 +209,6 @@ main {
 */
 
 .visit-checklist-page {
-    /*background-color: rgba(27, 49, 41, 0.64);*/
   background-image: url("../images/girls-at-goldengate-bridge-cropped.jpg");
   background-size: cover;
 }
@@ -222,14 +219,14 @@ main {
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .additional-forms-page {
+.additional-forms-page {
     background-image: url("../images/map-and-compass-cropped-for-tablet.jpg");
     background-size: cover;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .additional-forms-page {
+.additional-forms-page {
     background-image: url("../images/map-and-compass-cropped.jpg");
     background-size: cover;
   }
@@ -238,6 +235,23 @@ main {
 .contact-page {
   background-image: url("../images/hand-phone-cropped-for-phone.jpg");
   background-size: cover;
+}
+
+@media screen and (min-width: 480px) {
+.contact-page {
+    background-image: url("../images/hand-phone.jpg");
+    background-size: cover;
+  }
+}
+
+
+.color-overlay {
+  background-color: rgba(27, 49, 41, 0.64);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .icon-menu {
@@ -266,7 +280,7 @@ main {
 .label-box {
   height: 30px;
   float: left;
-  color: #3c3a3a;
+  color: white;
   padding: 15px 0 15px 15px;
   width: 170px;
   font-family: 'Muli', sans-serif;
@@ -401,6 +415,14 @@ h5 {
   font-size: 10px;
 }
 
+h6 {
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 0;
+  text-align: center;
+}
 
 
 /* FOOTER */
